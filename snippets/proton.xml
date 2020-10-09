@@ -10,13 +10,18 @@
   <remote name="blobs" fetch="https://github.com/NeutronBlobs" revision="rvc" />
   <remote name="blobs-ssh" fetch="ssh://git@github.com/NeutronBlobs" revision="rvc" />
 
+  <!-- Manifest -->
+  <project name="YumeMichi/android_manifest" path="manifest" remote="github" groups="proton" revision="rvc" />
+
   <!-- Replace existing repositories -->
   <remove-project name="platform/frameworks/base" />
-  <project name="android_frameworks_base" path="frameworks/base" remote="proton" groups="proton" />
+  <project name="Pie-onyx/android_frameworks_base" path="frameworks/base" remote="github" groups="proton" revision="rvc" />
   <remove-project name="platform/frameworks/native" />
   <project name="android_frameworks_native" path="frameworks/native" remote="proton" groups="proton" />
+  <remove-project name="platform/art" />
+  <project name="Pie-onyx/art" path="art" remote="github" groups="proton" revision="rvc" />
   <remove-project name="platform/build" />
-  <project name="android_build_make" path="build/make" remote="proton" groups="proton" >
+  <project name="Pie-onyx/build_make" path="build/make" remote="github" groups="proton" revision="rvc" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -25,20 +30,30 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
+  <remove-project name="platform/build/soong" />
+  <project name="Pie-onyx/build_soong" path="build/soong" remote="github" groups="proton" revision="rvc" />
+  <remove-project name="platform/external/arm-optimized-routines" />
+  <project name="crdroidandroid/android_external_arm-optimized-routines" path="external/arm-optimized-routines" remote="github" groups="proton" revision="11.0" />
+  <remove-project name="platform/external/libpng" />
+  <project name="crdroidandroid/android_external_libpng" path="external/libpng" remote="github" groups="proton" revision="11.0" />
+  <remove-project name="platform/external/libjpeg-turbo" />
+  <project name="crdroidandroid/android_external_libjpeg-turbo" path="external/libjpeg-turbo" remote="github" groups="proton" revision="11.0" />
   <remove-project name="platform/packages/apps/PackageInstaller" />
   <project name="android_packages_apps_PermissionController" path="packages/apps/PermissionController" remote="proton" groups="proton" />
   <remove-project name="platform/packages/apps/Settings" />
-  <project name="android_packages_apps_Settings" path="packages/apps/Settings" remote="proton" groups="proton" />
+  <project name="Pie-onyx/android_packages_apps_Settings" path="packages/apps/Settings" remote="github" groups="proton" revision="rvc" />
   <remove-project name="platform/packages/apps/Launcher3" />
   <project name="android_packages_apps_Launcher3" path="packages/apps/Launcher3" remote="proton" groups="proton" />
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
   <project name="android_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence" remote="proton" groups="proton" />
+  <remove-project name="platform/packages/apps/Terminal" />
+  <project name="LineageOS/android_packages_apps_Terminal" path="packages/apps/Terminal" remote="github" groups="proton" revision="lineage-18.0" />
   <remove-project name="platform/system/core" />
   <project name="android_system_core" path="system/core" remote="proton" groups="proton" />
   <remove-project name="platform/system/sepolicy" />
   <project name="android_system_sepolicy" path="system/sepolicy" remote="proton" groups="proton" />
   <remove-project name="platform/bionic" />
-  <project name="android_bionic" path="bionic" remote="proton" groups="proton" />
+  <project name="Pie-onyx/bionic" path="bionic" remote="github" groups="proton" revision="rvc" />
   <remove-project name="platform/external/roboto-fonts" />
   <project name="android_external_roboto-fonts" path="external/roboto-fonts" remote="proton" groups="proton" />
   <remove-project name="platform/external/noto-fonts" />
@@ -85,9 +100,8 @@
   <!-- Add new repositories -->
   <project name="android_device_google_wahoo" path="device/google/wahoo" remote="proton" groups="proton" />
   <project name="android_device_google_taimen" path="device/google/taimen" remote="proton" groups="proton" />
-  <project name="android_packages_apps_Jelly" path="packages/apps/Jelly" remote="proton" groups="proton" />
   <project name="android_packages_apps_ExactCalculator" path="packages/apps/ExactCalculator" remote="proton" groups="proton" />
-  <project name="android_vendor_proton" path="vendor/proton" remote="proton" groups="proton" />
+  <project name="Pie-onyx/android_vendor_proton" path="vendor/proton" remote="github" groups="proton" revision="rvc" />
   <project name="android_device_google_muskie" path="device/google/muskie" remote="proton" groups="proton" />
   <project name="android_external_json-c" path="external/json-c" remote="proton" groups="proton" />
   <project name="android_hardware_qcom_msm8998" path="hardware/qcom/msm8998" remote="proton" groups="proton" />
