@@ -34,10 +34,24 @@
   <project name="Pie-onyx/build_soong" path="build/soong" remote="github" groups="proton" revision="rvc" />
   <remove-project name="platform/external/arm-optimized-routines" />
   <project name="crdroidandroid/android_external_arm-optimized-routines" path="external/arm-optimized-routines" remote="github" groups="proton" revision="11.0" />
-  <remove-project name="platform/external/libpng" />
-  <project name="crdroidandroid/android_external_libpng" path="external/libpng" remote="github" groups="proton" revision="11.0" />
+  <remove-project name="platform/external/cpu_features" />
+  <project name="crdroidandroid/android_external_cpu_features" path="external/cpu_features" remote="github" groups="proton" revision="11.0" />
+  <remove-project name="platform/external/freetype" />
+  <project name="crdroidandroid/android_external_freetype" path="external/freetype" remote="github" groups="proton" revision="11.0" />
+  <remove-project name="platform/external/giflib" />
+  <project name="crdroidandroid/android_external_giflib" path="external/giflib" remote="github" groups="proton" revision="11.0" />
+  <remove-project name="platform/external/harfbuzz_ng" />
+  <project name="crdroidandroid/android_external_harfbuzz_ng" path="external/harfbuzz_ng" remote="github" groups="proton" revision="11.0" />
   <remove-project name="platform/external/libjpeg-turbo" />
   <project name="crdroidandroid/android_external_libjpeg-turbo" path="external/libjpeg-turbo" remote="github" groups="proton" revision="11.0" />
+  <remove-project name="platform/external/libpng" />
+  <project name="crdroidandroid/android_external_libpng" path="external/libpng" remote="github" groups="proton" revision="11.0" />
+  <remove-project name="platform/external/sqlite" />
+  <project name="crdroidandroid/android_external_sqlite" path="external/sqlite" remote="github" groups="proton" revision="11.0" />
+  <remove-project name="platform/external/vixl" />
+  <project name="crdroidandroid/android_external_vixl" path="external/vixl" remote="github" groups="proton" revision="11.0" />
+  <remove-project name="platform/external/zlib" />
+  <project name="crdroidandroid/android_external_zlib" path="external/zlib" remote="github" groups="proton" revision="11.0" />
   <remove-project name="platform/packages/apps/PackageInstaller" />
   <project name="android_packages_apps_PermissionController" path="packages/apps/PermissionController" remote="proton" groups="proton" />
   <remove-project name="platform/packages/apps/Settings" />
