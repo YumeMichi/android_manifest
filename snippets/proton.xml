@@ -36,8 +36,6 @@
   <project name="crdroidandroid/android_external_arm-optimized-routines" path="external/arm-optimized-routines" remote="github" groups="proton" revision="11.0" />
   <remove-project name="platform/external/cpu_features" />
   <project name="crdroidandroid/android_external_cpu_features" path="external/cpu_features" remote="github" groups="proton" revision="11.0" />
-  <remove-project name="platform/external/freetype" />
-  <project name="crdroidandroid/android_external_freetype" path="external/freetype" remote="github" groups="proton" revision="11.0" />
   <remove-project name="platform/external/giflib" />
   <project name="crdroidandroid/android_external_giflib" path="external/giflib" remote="github" groups="proton" revision="11.0" />
   <remove-project name="platform/external/harfbuzz_ng" />
