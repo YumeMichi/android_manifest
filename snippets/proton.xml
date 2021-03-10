@@ -31,7 +31,10 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   <remove-project name="platform/build/soong" />
-  <project name="Pie-onyx/build_soong" path="build/soong" remote="github" groups="proton" revision="rvc" />
+  <project name="Pie-onyx/build_soong" path="build/soong" remote="github" groups="proton" revision="rvc">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
   <remove-project name="platform/external/arm-optimized-routines" />
   <project name="crdroidandroid/android_external_arm-optimized-routines" path="external/arm-optimized-routines" remote="github" groups="proton" revision="11.0" />
   <remove-project name="platform/external/cpu_features" />
